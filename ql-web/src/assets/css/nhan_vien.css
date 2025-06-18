@@ -1,0 +1,64 @@
+/* ===== STYLES FOR EMPLOYEE MANAGEMENT PAGE (NHÂN VIÊN) ===== */
+.employee-management-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f7f6;
+  padding: 2rem;
+}
+
+.login-form {
+  max-width: 450px;
+  width: 100%;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.login-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.login-form h4 {
+  color: #333;
+  font-weight: 600;
+}
+
+.login-form .form-control,
+.login-form .btn {
+  height: 50px;
+}
+
+.login-form #admin-user {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.login-form .input-group-text {
+  background-color: transparent;
+  border-right: 0;
+}
+.login-form .input-group input {
+  border-left: 0;
+}
+.login-form .input-group input:focus {
+  box-shadow: none;
+}
+
+.login-form .btn-primary {
+  background-color: #008080;
+  border-color: #008080;
+  font-weight: 600;
+}
+
+.login-form .btn-primary:hover {
+  background-color: #006a6a;
+  border-color: #006a6a;
+}

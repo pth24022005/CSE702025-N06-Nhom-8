@@ -1,0 +1,49 @@
+/* src/assets/css/CategoryInfo.css */
+
+.search-container,
+.form-container,
+.table-container {
+  border: 1px solid #e9ecef;
+}
+
+.search-section .form-check-label,
+.form-container .form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.table-container {
+  height: 600px; /* Chiều cao cố định cho bảng */
+  display: flex;
+  flex-direction: column;
+}
+
+.table-responsive {
+  flex-grow: 1; /* Cho phép table-responsive co giãn */
+  overflow-y: auto; /* Cho phép cuộn dọc */
+}
+
+.table {
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+.table thead {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+.table tbody tr:hover {
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+
+/* Style cho dòng được chọn trong bảng */
+.table tbody tr.table-primary,
+.table tbody tr.table-primary:hover {
+  --bs-table-bg: #cfe2ff;
+  --bs-table-border-color: #9ec5fe;
+  color: #000;
+}

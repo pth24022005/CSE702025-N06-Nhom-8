@@ -1,0 +1,92 @@
+/* src/assets/css/BookInfo.css */
+.main-content {
+  background-color: #f8f9fa;
+}
+
+.book-info-container {
+  /* Bỏ nền trắng ở đây để nền .form-section và .table-section nổi bật hơn */
+}
+
+.form-section {
+  border: 1px solid #dee2e6;
+}
+
+.image-uploader {
+  height: 100%;
+  min-height: 250px; /* Tăng chiều cao tối thiểu */
+  background-color: #f8f9fa;
+  cursor: pointer;
+  flex-direction: column;
+  border-style: dashed !important;
+  transition: background-color 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-uploader:hover {
+  background-color: #e9ecef;
+}
+
+.image-uploader .preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form-control,
+.form-select {
+  height: 38px;
+  font-size: 0.9rem;
+}
+
+.table-section {
+  border: 1px solid #dee2e6;
+}
+
+.table-responsive {
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.table {
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+.table thead {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+
+.table td img {
+  height: 60px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.action-sidebar .info-box {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 0.375rem;
+  color: white;
+}
+
+.info-box.bg-the-loai {
+  background-color: #27c0d1;
+}
+.info-box.bg-nxb {
+  background-color: #e882a1;
+}
+.info-box.bg-so-luong {
+  background-color: #4caf50;
+}
+
+.action-sidebar .btn {
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+}

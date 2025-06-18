@@ -1,0 +1,75 @@
+/* src/assets/css/Layout.css */
+
+.layout-wrapper {
+  display: flex;
+  height: 100vh;
+  overflow: hidden; /* Thay đổi ở đây: overflow-x thành overflow */
+}
+
+/* --- SIDEBAR --- */
+.sidebar-container {
+  width: 280px;
+  flex-shrink: 0;
+  background-color: #212529;
+  transition: margin-left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+}
+.sidebar-container.collapsed {
+  margin-left: -280px;
+}
+/* ... các style khác của sidebar giữ nguyên ... */
+.sidebar-container .nav-link {
+  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+  white-space: nowrap;
+  color: white;
+  border-radius: 0.375rem;
+}
+.sidebar-container .nav-link i {
+  width: 24px;
+}
+.sidebar-container .nav-pills .nav-link.active,
+.sidebar-container .nav-pills .show > .nav-link {
+  background-color: #00acc1;
+}
+.sidebar-container .nav-link:hover {
+  background-color: #00acc1;
+}
+
+/* --- MAIN CONTENT --- */
+.main-content-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #00acc1;
+  /* THAY ĐỔI 1: Xóa overflow-y ở đây để header và footer không bị cuộn theo */
+}
+
+.main-content-wrapper button {
+  background-color: #00acc1;
+  /* THAY ĐỔI 1: Xóa overflow-y ở đây để header và footer không bị cuộn theo */
+}
+/* Header */
+.header {
+  /* Bỏ .bg-teal đi để dùng class mới */
+  flex-shrink: 0; /* Ngăn header bị co lại */
+}
+/* THAY ĐỔI 2: Tạo class mới để ghim header */
+.header-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1020; /* z-index cao để đảm bảo header luôn ở trên cùng */
+}
+
+/* Main Content Area */
+.main-content {
+  flex-grow: 1;
+  /* THAY ĐỔI 3: Chuyển overflow-y vào đây để chỉ khu vực này cuộn */
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+/* Footer */
+.footer {
+  flex-shrink: 0; /* Ngăn footer bị co lại */
+}

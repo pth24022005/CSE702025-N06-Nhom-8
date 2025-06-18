@@ -1,0 +1,55 @@
+/* src/assets/css/BorrowBook.css */
+.borrow-container {
+  border: 1px solid #dee2e6;
+}
+
+.search-panel,
+.form-panel {
+  font-size: 0.9rem;
+}
+
+.form-panel .form-label {
+  font-weight: 500;
+}
+
+.form-control,
+.form-select {
+  font-size: 0.9rem;
+  padding: 0.25rem 0.5rem;
+  height: calc(1.5em + 0.5rem + 2px);
+}
+
+input:read-only,
+select:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.action-sidebar .btn {
+  font-weight: 600;
+  padding: 0.75rem;
+}
+
+.table-section {
+  max-height: 400px;
+  overflow: hidden;
+  border-top: 1px solid #dee2e6;
+  padding-top: 1rem;
+}
+
+.table-responsive {
+  max-height: calc(400px - 2rem); /* Trừ đi padding */
+  overflow-y: auto;
+}
+
+.table {
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.table thead {
+  position: sticky;
+  top: 0;
+  background-color: #f8f9fa;
+  z-index: 1;
+}

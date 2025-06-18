@@ -1,0 +1,47 @@
+/* src/assets/css/PublisherInfo.css */
+
+.search-container,
+.form-container,
+.table-container {
+  border: 1px solid #e9ecef;
+}
+
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.table-container {
+  height: 600px; /* Chiều cao cố định cho bảng */
+  display: flex;
+  flex-direction: column;
+}
+
+.table-responsive {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.table {
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+.table thead {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+.table tbody tr:hover {
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+
+.table tbody tr.table-primary,
+.table tbody tr.table-primary:hover {
+  --bs-table-bg: #cfe2ff;
+  --bs-table-border-color: #9ec5fe;
+  color: #000;
+}

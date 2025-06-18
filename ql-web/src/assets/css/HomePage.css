@@ -1,0 +1,82 @@
+/* src/assets/css/HomePage.css */
+
+/* === Banner Chào mừng === */
+.welcome-banner {
+  min-height: 150px;
+  /* THAY ĐỔI: Chuyển sang màu xanh dương sáng */
+  background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* THAY ĐỔI: Căn giữa chữ */
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 114, 255, 0.2);
+}
+
+.welcome-banner-text h1 {
+  /* THAY ĐỔI: Chữ màu trắng */
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Bỏ các student-placeholder không còn dùng đến */
+
+/* === THÊM MỚI: Khu vực sách nổi bật === */
+.top-books-section {
+  margin-top: 3rem; /* Khoảng cách với banner */
+}
+
+.top-books-title {
+  font-weight: 600;
+  color: #343a40;
+}
+
+.category-card {
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.category-card .icon-wrapper {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  width: 80px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.category-card .category-name {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #495057;
+}
+
+/* Màu sắc riêng cho từng thẻ */
+.category-card.bg-yellow .icon-wrapper {
+  background-color: #fffbeb;
+  color: #f59e0b;
+}
+.category-card.bg-blue .icon-wrapper {
+  background-color: #eff6ff;
+  color: #3b82f6;
+}
+.category-card.bg-pink .icon-wrapper {
+  background-color: #fdf2f8;
+  color: #ec4899;
+}

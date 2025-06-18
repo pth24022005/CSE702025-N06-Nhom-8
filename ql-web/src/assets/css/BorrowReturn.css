@@ -1,0 +1,79 @@
+/* src/assets/css/BorrowReturn.css */
+
+/* ========================================================
+   THAY ĐỔI Ở ĐÂY: Dùng Flexbox để kiểm soát layout
+   ======================================================== */
+.action-card {
+  display: flex; /* Chuyển sang Flexbox */
+  flex-direction: column; /* Sắp xếp các phần tử con theo chiều dọc */
+  height: 270px; /* Cho card một chiều cao cố định để tất cả đều nhau */
+
+  text-decoration: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================================
+   THAY ĐỔI Ở ĐÂY: Cho phép khu vực ảnh co giãn
+   ======================================================== */
+.action-card-image {
+  flex-grow: 1; /* Quan trọng: Cho phép khu vực ảnh co giãn để lấp đầy không gian thừa */
+  overflow: hidden;
+  /* Xóa height: 220px vì giờ nó sẽ tự co giãn */
+}
+
+.action-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.action-card:hover .action-card-image img {
+  transform: scale(1.05);
+}
+
+.action-card-label {
+  /* Thuộc tính này sẽ co lại theo nội dung của nó, không chiếm thêm không gian */
+  flex-shrink: 0;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* --- Màu sắc cho card Mượn Sách --- */
+.action-card.muon-sach .action-card-label {
+  background-color: #757575;
+}
+
+/* --- Màu sắc cho card Trả Sách --- */
+.action-card.tra-sach .action-card-label {
+  background-color: #757575; /* Màu xám mặc định */
+}
+
+/* Hiệu ứng hover cho card Mượn Sách */
+.action-card.muon-sach:hover .action-card-label {
+  background-color: #00acc1; /* Đổi sang màu xanh khi hover */
+}
+/* Hiệu ứng hover cho card Trả Sách */
+.action-card.tra-sach:hover .action-card-label {
+  background-color: #00acc1; /* Đổi sang màu xanh khi hover */
+}
+
+.interaction-panel {
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 1px solid #dee2e6;
+}

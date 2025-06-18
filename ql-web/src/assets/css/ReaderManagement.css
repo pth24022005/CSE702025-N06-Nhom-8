@@ -1,0 +1,55 @@
+/* ===== STYLES FOR READER MANAGEMENT PAGE (QUẢN LÝ ĐỘC GIẢ) ===== */
+.form-container,
+.search-section,
+.table-container {
+  border: 1px solid #e9ecef;
+}
+
+.form-control,
+.form-select {
+  font-size: 0.9rem;
+}
+
+/* Style cho input bị khóa (chỉ đọc) */
+input:read-only {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.library-card-graphic {
+  background-color: #e9ecef;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+.search-section .form-check-label {
+  font-size: 0.9rem;
+}
+
+.table-icon {
+  text-align: right;
+  color: #6c757d;
+}
+
+.table-responsive {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.table {
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+.table tbody tr:hover {
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+
+/* Style cho dòng được chọn trong bảng */
+.table tbody tr.selected {
+  background-color: #cfe2ff; /* Màu xanh nhạt của Bootstrap */
+  font-weight: 500;
+}
