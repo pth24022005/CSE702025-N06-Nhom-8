@@ -11,7 +11,7 @@ trong việc quản lý sách và mượn trả.
 ## Chức năng chính
 - Quản lý sách:Thêm,sửa,xóa thông tin sách
 - Quản lý độc giả:Thêm,sửa,xóa thông tin độc giả
-- Quản lý hệ thống:Thêm,sửa,xóa thông tin người dùng và phân quyền sử dụng
+- Quản lý nhân viên:Thêm,sửa,xóa thông tin nhân viên và phân quyền sử dụng
 - Tìm kiếm thông tin
 - Thống kê
 ## Công nghệ sử dụng
