@@ -1,7 +1,6 @@
 // src/pages/StaffManagement.jsx
 import React, { useState } from "react";
 
-// Import file CSS "riêng" của trang này
 import "../assets/css/StaffManagement.css";
 
 // Dữ liệu mẫu ban đầu
@@ -13,7 +12,7 @@ const initialEmployees = [
     diaChi: "Nghệ An",
     sdt: "372651619",
     chucVu: "Quản Lý",
-    image: "https://i.imgur.com/8ePAA6G.png",
+    image: "../../public/img/avatar1.jpg",
   },
   {
     maNhanVien: "MaNV02",
@@ -22,7 +21,7 @@ const initialEmployees = [
     diaChi: "Hà Nội",
     sdt: "123456789",
     chucVu: "Nhân Viên",
-    image: "https://i.imgur.com/JzaT5wg.png",
+    image: "../../public/img/avatar1.jpg",
   },
 ];
 

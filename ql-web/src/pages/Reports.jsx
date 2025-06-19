@@ -154,9 +154,7 @@ const Reports = () => {
           </table>
         </div>
 
-        {/* ========================================================
-           THAY ĐỔI: Di chuyển các nút xuống đây và dùng d-flex
-           ======================================================== */}
+        {}
         <div className="report-actions mt-4 d-flex justify-content-center gap-3">
           <button
             className={`btn ${

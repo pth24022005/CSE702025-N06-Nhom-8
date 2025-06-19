@@ -53,7 +53,7 @@ const AuthorInfo = () => {
       alert("Mã Tác Giả là bắt buộc!");
       return;
     }
-    // Dựa vào state `selectedAuthorId` để quyết định Thêm hay Sửa
+
     if (selectedAuthorId) {
       // Sửa
       setAuthors((prev) =>
@@ -74,7 +74,6 @@ const AuthorInfo = () => {
     clearForm();
   };
 
-  // Nút View giờ có chức năng là xóa trắng form để sẵn sàng thêm mới
   const handleViewClick = () => {
     clearForm();
   };

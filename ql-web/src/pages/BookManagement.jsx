@@ -3,15 +3,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../assets/css/BookManagement.css";
 
-// ========================================================
-// THAY ĐỔI Ở ĐÂY: Cập nhật lại mảng dữ liệu với đường dẫn ảnh local
-// ========================================================
 const sampleBooks = [
   {
     id: 1,
     title: "Đường Về Nhà",
     author: "Dương ngược chiều",
-    // Đường dẫn tuyệt đối từ thư mục gốc, trỏ vào thư mục public
+
     imageUrl: "../../public/img/duong_ve_nha_bia_.jpg",
   },
   {
@@ -49,7 +46,7 @@ const BookManagement = () => {
     <>
       <h3 className="mb-4">QUẢN LÝ SÁCH</h3>
       <div className="row g-4 mb-5">
-        {/* ... các management-card giữ nguyên ... */}
+        {}
         <div className="col-lg-3 col-md-6">
           <Link to="/quan-ly-sach/thong-tin" className="management-card">
             <div className="card-icon book-icon">

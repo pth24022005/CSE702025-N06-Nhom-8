@@ -1,10 +1,9 @@
 // src/pages/ReaderManagement.jsx
 import React, { useState, useMemo } from "react";
 
-// Import file CSS tương ứng cho trang này
 import "../assets/css/ReaderManagement.css";
 
-// Dữ liệu mẫu ban đầu, trong ứng dụng thực tế sẽ lấy từ API
+// Dữ liệu mẫu ban đầu
 const initialReaders = [
   {
     maDocGia: "MaDG01",

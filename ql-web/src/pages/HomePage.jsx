@@ -1,6 +1,6 @@
 // src/pages/HomePage.jsx
 import React from "react";
-import "./../assets/css/HomePage.css"; // Import CSS riêng của trang chủ
+import "./../assets/css/HomePage.css";
 
 const HomePage = () => {
   return (
@@ -12,10 +12,10 @@ const HomePage = () => {
         <div className="welcome-banner-text">
           <h1 className="display-4 fw-bold">WELCOME TO PKA</h1>
         </div>
-        {/* Đã xóa các student-placeholder */}
+        {}
       </div>
 
-      {/* --- THÊM MỚI: Khu vực sách nổi bật --- */}
+      {/*Khu vực sách nổi bật --- */}
       <div className="top-books-section">
         <h3 className="top-books-title mb-4">Top 10 Most Borrowed Books</h3>
         <div className="row g-4">

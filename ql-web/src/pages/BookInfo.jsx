@@ -208,7 +208,7 @@ const BookInfo = () => {
                     />
                   </div>
 
-                  {/* === THAY ĐỔI: Chuyển thành input text === */}
+                  {}
                   <div className="col-md-6">
                     <label htmlFor="maNXB" className="form-label">
                       Mã NXB
@@ -222,7 +222,7 @@ const BookInfo = () => {
                     />
                   </div>
 
-                  {/* === THAY ĐỔI: Chuyển thành input text === */}
+                  {}
                   <div className="col-md-6">
                     <label htmlFor="maTacGia" className="form-label">
                       Mã Tác Giả

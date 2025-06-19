@@ -3,7 +3,7 @@
 .layout-wrapper {
   display: flex;
   height: 100vh;
-  overflow: hidden; /* Thay đổi ở đây: overflow-x thành overflow */
+  overflow: hidden;
 }
 
 /* --- SIDEBAR --- */
@@ -17,7 +17,7 @@
 .sidebar-container.collapsed {
   margin-left: -280px;
 }
-/* ... các style khác của sidebar giữ nguyên ... */
+
 .sidebar-container .nav-link {
   font-size: 1.1rem;
   padding: 0.75rem 1rem;
@@ -42,29 +42,26 @@
   display: flex;
   flex-direction: column;
   background-color: #00acc1;
-  /* THAY ĐỔI 1: Xóa overflow-y ở đây để header và footer không bị cuộn theo */
 }
 
 .main-content-wrapper button {
   background-color: #00acc1;
-  /* THAY ĐỔI 1: Xóa overflow-y ở đây để header và footer không bị cuộn theo */
 }
 /* Header */
 .header {
-  /* Bỏ .bg-teal đi để dùng class mới */
   flex-shrink: 0; /* Ngăn header bị co lại */
 }
-/* THAY ĐỔI 2: Tạo class mới để ghim header */
+
 .header-sticky {
   position: sticky;
   top: 0;
-  z-index: 1020; /* z-index cao để đảm bảo header luôn ở trên cùng */
+  z-index: 1020;
 }
 
 /* Main Content Area */
 .main-content {
   flex-grow: 1;
-  /* THAY ĐỔI 3: Chuyển overflow-y vào đây để chỉ khu vực này cuộn */
+
   overflow-y: auto;
   background-color: #fff;
 }

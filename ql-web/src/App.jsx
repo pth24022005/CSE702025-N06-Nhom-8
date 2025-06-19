@@ -5,7 +5,6 @@ import { Routes, Route, Navigate } from "react-router-dom";
 // Layout
 import MainLayout from "./components/MainLayout.jsx";
 
-// Pages - Chỉ import các trang đã được xây dựng
 import LoginForm from "./pages/LoginForm.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import BookManagement from "./pages/BookManagement.jsx";

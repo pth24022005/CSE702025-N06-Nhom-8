@@ -24,7 +24,7 @@ const MainLayout = () => {
       >
         <div className="sidebar-profile text-center py-3">
           <img
-            src="/img/avatar.jpg"
+            src="/img/avatar1.jpg"
             alt="Admin Avatar"
             className="rounded-circle mb-2"
             width="80"
@@ -70,9 +70,7 @@ const MainLayout = () => {
               <span>Báo cáo - Thống kê</span>
             </NavLink>
           </li>
-          {/* ========================================================
-             ĐÃ XÓA MỤC TÀI KHOẢN TẠI ĐÂY
-             ======================================================== */}
+          {}
         </ul>
         <hr />
         <div>
@@ -110,7 +108,7 @@ const MainLayout = () => {
             >
               <span className="me-3">Hi, Admin</span>
               <img
-                src="/img/avatar.jpg"
+                src="/img/avatar1.jpg"
                 alt="Admin Avatar"
                 className="rounded-circle"
                 width="40"

@@ -59,9 +59,7 @@ const LoginForm = () => {
             <button type="submit" className="btn btn-submit">
               Xác nhận
             </button>
-            {/* ========================================================
-               ĐÃ XÓA NÚT ĐĂNG KÝ
-               ======================================================== */}
+            {}
           </div>
         </form>
       </div>

@@ -1,7 +1,7 @@
 // src/pages/BorrowBook.jsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../assets/css/BorrowBook.css"; // Đảm bảo file CSS đã tồn tại
+import "../assets/css/BorrowBook.css";
 
 // Dữ liệu mẫu ban đầu
 const initialBorrows = [
@@ -29,7 +29,6 @@ const initialBorrows = [
   },
 ];
 
-// State mặc định cho form khi ở trạng thái thêm mới hoặc sau khi hủy
 const emptyFormState = {
   maPhieu: "",
   soThe: "",

@@ -101,7 +101,6 @@ const ReturnBook = () => {
   };
 
   const handleReturnBook = () => {
-    // Thay vì dựa vào `selectedTicketId`, giờ chúng ta sẽ dựa vào mã phiếu trên form
     const ticketToReturnId = formData.maPhieu;
     if (!ticketToReturnId) {
       alert("Vui lòng nhập hoặc chọn một phiếu mượn để trả sách!");
@@ -172,9 +171,7 @@ const ReturnBook = () => {
               <div className="form-panel p-3 border rounded h-100">
                 <h6 className="mb-3">Thông tin phiếu trả sách</h6>
                 <div className="row g-3">
-                  {/* ========================================================
-                                   THAY ĐỔI: Bỏ `readOnly` để cho phép nhập liệu
-                                   ======================================================== */}
+                  {}
                   <div className="col-6">
                     <label htmlFor="maPhieu" className="form-label">
                       Mã Phiếu Mượn
